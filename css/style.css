@@ -950,11 +950,7 @@ body{
     }
 
     .back-to-top img{
-        width: 30px;
-    }
-      
-    .back-to-top:hover {
-    background-color: #444; 
+        width: 25px;
     }
 
 
