@@ -489,7 +489,14 @@ body{
 
     .contact-cards img{
         width: 200px;
+        transition: all 0.3s ease-in-out;
     }
+
+    .contact-cards img:hover{
+        /* filter: brightness(70%); */
+        opacity: 0.7;
+    }
+    
 
     .small-icons{
         display: flex;
