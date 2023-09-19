@@ -35,7 +35,7 @@ body{
     .nav-menu a{
         font-family: var(--headings);
         letter-spacing: 3px;
-        font-size: 1.05rem;
+        font-size: 1.2rem;
         color: #dbdbdb;
         transition: all 0.2s ease-in-out;
     }
@@ -185,6 +185,11 @@ body{
 
     .music-cards img{
         width: 120px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .music-cards img:hover{
+        opacity: 0.7;
     }
 
     #music-page{
@@ -208,10 +213,11 @@ body{
     .latest-cards img{
         width: 500px;
         box-shadow: 0px 4px 10px 0px #888888;
+        border-radius: 5px;
     }
 
     .latest-cards p{
-        font-size: 1.3rem;
+        font-size: 1.7rem;
         color: rgba(0, 0, 0, 0.596);
     }
 
@@ -250,7 +256,7 @@ body{
     }
 
     .site-buttons:hover{
-        color: #B90909;
+        background: #B90909;
     }
 
     .albums-wrapper{
@@ -262,14 +268,15 @@ body{
 
     .albums-cards img{
         width: 130px;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.3s ease-in-out;
         cursor: pointer;
         box-shadow: 0px 4px 10px 0px #888888;
+        border-radius: 3px;
     }
 
-    /* .albums-cards img:hover{
-        filter: brightness(90%);
-    } */
+    .albums-cards img:hover{
+        filter: brightness(70%);
+    }
 
     .albums > h3{
         margin-top: 5rem;
@@ -403,6 +410,11 @@ body{
     .more img{
         width: 300px;
         margin-top: 1rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .more img:hover{
+        opacity: 0.8;
     }
 
 
@@ -502,11 +514,12 @@ body{
 
  
     footer{
+        text-transform: uppercase;
         display: flex;
-        justify-content: space-between;
         padding: 15px;
         height: 100px;
-        align-items: center;
+        justify-content: center;
+        align-items: end;
         color: #00000075;
     }
 
@@ -652,10 +665,11 @@ body{
     .latest-cards img{
         width: 100%;
         box-shadow: 0px 4px 10px 0px #888888;
+        border-radius: 3px;
     }
 
     .latest-cards p{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         color: rgba(0, 0, 0, 0.596);
     }
 
@@ -709,6 +723,7 @@ body{
         max-width: 100%;
         height: auto;
         box-shadow: 0px 4px 10px 0px #888888;
+        border-radius: 3px;
     }
 
     .albums-cards{
@@ -931,6 +946,7 @@ body{
     /*** FOOTER ***/
 
     footer{
+        text-transform: uppercase;
         height: 4rem;
         display: flex;
         justify-content: center;
