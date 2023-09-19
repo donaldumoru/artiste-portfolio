@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Get the music section element
     const musicSection = document.getElementById('music-page');
 
-    // Get the footer element (Replace 'footer' with footer element ID or class)
+    // Get the footer element (Replace 'footer' with your footer element ID or class)
     const footer = document.getElementById('footer');
 
     // Get the Back to Top button element
@@ -28,37 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Attach the scrollToTop function to the Back to Top button's onclick event
     backToTopButton.onclick = scrollToTop;
 });
-
-
-// Function to show the popup with the album image, title, and listen URL
-function showPopup(imageSrc, title, listenURL) {
-    const popupContainer = document.getElementById('popup-container');
-    const popup = document.getElementById('popup');
-    const popupImage = document.getElementById('popup-image');
-    const popupTitle = document.getElementById('popup-title');
-    const listenLink = document.getElementById('listen-link');
-    const body = document.querySelector('body');
-
-    popupImage.src = imageSrc;
-    popupTitle.textContent = title;
-    listenLink.href = listenURL;
-    popupContainer.style.display = 'flex';
-
-    // Prevent scrolling on the rest of the page
-    body.style.overflow = 'hidden';
-}
-
-// Function to hide the popup
-function hidePopup() {
-    const popupContainer = document.getElementById('popup-container');
-    const body = document.querySelector('body');
-
-    popupContainer.style.display = 'none';
-
-    // Restore scrolling on the rest of the page
-    body.style.overflow = 'auto';
-}
-
 
 
 
@@ -117,6 +86,40 @@ const lyricsArray = [
     "\"You wanna know if God exists, go look for yourself\" \n- 2020 viSiON",
 
     "\"So ahead of time I’ve been keeping my social distance\" \n- 2020 viSiON",
+
+    "\"Used to have nothing to lose with something to prove. \nNow I have everything with nothing to prove\" \n- NOTHING TO PROVE",
+
+    "\"We outside and we eating it’s a picnic\" \n- NOTHING TO PROVE",
+
+    "\"You see me cutting off snakes? it’s just reflex\" \n- NOTHING TO PROVE",
+
+    "\"Bad boy, walking with faith, I took Big steps\" \n- NOTHING TO PROVE",
+
+    "\"Cut from the type of cloth you no fit press\" \n- NOTHING TO PROVE",
+
+    "\"I am in real life who I am on the mic\" \n- BLAQ FRIDAY",
+
+    "\"You can have all the hype and all the cosigns. \nWithout the hypeman, still amoshine\" \n- BLAQ FRIDAY",
+
+    "\"Trust is something you gotta earn on the street \nbut trust nobody that's what I learned from the streets\" \n- BLAQ FRIDAY",
+
+    "\"Came in the game on my own, with no fame or cash. \nJust a hungry Jay-Z with no Damon dash\" \n- BLAQ FRIDAY",
+
+    "\"I was really in the middle East, holding down the West\" \n- BLAQ FRIDAY",
+
+    "\"All I need in this life of sin, \na big fat kpoli and a bottle of drink\" \n- SUMMER VIBE",
+
+    "\"Gimme light make I dey see front. \nNo be say I better pass my neighbor\" \n- SUMMER VIBE",
+
+    "\"Party like we no get another life. \nClaro for hand pass kpo weh dem never buy\" \n- SUMMER VIBE",
+
+    "\"Every mallam with e kettle and e wallet\" \n- SUMMER VIBE",
+
+    "\"I no need your two cents, keep am for your pocket\" \n- SUMMER VIBE",
+
+    "\"They tripping cos I stay dripping. \nEverything fly, even the rap na pidgin\" \n- SUMMER VIBE",
+
+    "\"I just wanna live my life happy, make enjoyment show for my autopsy\" \n- SUMMER VIBE",
 ];
 
 // Function to get a random lyric from the array
