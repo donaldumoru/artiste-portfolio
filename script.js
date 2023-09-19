@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Get the music section element
     const musicSection = document.getElementById('music-page');
 
-    // Get the footer element (Replace 'footer' with your footer element ID or class)
+    // Get the footer element (Replace 'footer' with footer element ID or class)
     const footer = document.getElementById('footer');
 
     // Get the Back to Top button element
