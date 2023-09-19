@@ -97,6 +97,15 @@ body{
         display: flex;
         flex-direction: column;
         gap: 20px;
+        
+    }
+
+    .home-container img{
+        transition: all 0.3s ease-in-out;
+    }
+
+    .home-container img:hover{
+        opacity: 0.5;
     }
 
     .listen-container{
@@ -198,6 +207,7 @@ body{
 
     .latest-cards img{
         width: 500px;
+        box-shadow: 0px 4px 10px 0px #888888;
     }
 
     .latest-cards p{
@@ -254,6 +264,7 @@ body{
         width: 130px;
         transition: all 0.2s ease-in-out;
         cursor: pointer;
+        box-shadow: 0px 4px 10px 0px #888888;
     }
 
     /* .albums-cards img:hover{
@@ -444,6 +455,7 @@ body{
         align-items: center;
         padding: 2rem;
         border-bottom: 2px solid rgba(0, 0, 0, 0.63);
+        gap: 70px;
     }
 
     .contact-wrapper{
@@ -452,7 +464,7 @@ body{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap: 50px;
+        gap: 100px;
         justify-content: center;
     }
 
@@ -639,6 +651,7 @@ body{
 
     .latest-cards img{
         width: 100%;
+        box-shadow: 0px 4px 10px 0px #888888;
     }
 
     .latest-cards p{
@@ -695,6 +708,7 @@ body{
     .albums-cards img{
         max-width: 100%;
         height: auto;
+        box-shadow: 0px 4px 10px 0px #888888;
     }
 
     .albums-cards{
