@@ -417,7 +417,7 @@ body{
     .about-wrapper{
         color: rgba(0, 0, 0, 0.596);
         margin-top: 5rem;
-        font-size: 1.15rem;
+        font-size: 18px;
         text-align: center;
         line-height: 1.7rem;
         text-transform: uppercase;
@@ -447,7 +447,7 @@ body{
     }
 
     .contact-wrapper{
-        width: 60%;
+        width: 100%;
         margin-top: 2rem;
         display: flex;
         flex-wrap: wrap;
@@ -458,7 +458,7 @@ body{
 
 
     .contact-cards img{
-        width: 280px;
+        width: 200px;
     }
 
     .small-icons{
@@ -822,7 +822,7 @@ body{
     .about-wrapper{
         color: rgba(0, 0, 0, 0.596);
         margin-top: 2rem;
-        font-size: 1.15rem;
+        font-size: 18px;
         text-align: center;
         line-height: 1.7rem;
         text-transform: uppercase;
