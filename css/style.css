@@ -9,6 +9,11 @@
     text-decoration: none;
     list-style: none;
     font-family: var(--titles);
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 body{
@@ -530,6 +535,25 @@ body{
         align-items: end;
         color: #00000075;
     }
+
+
+    .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        border: none;
+        background-color: #fffff9;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        display: none; 
+        transition: all 0.3s ease-in-out;
+    }
+
+    .back-to-top img{
+        width: 25px;
+    }
+
 
 
 
