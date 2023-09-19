@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TenTik</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION BAR -->
+
+
+
+
+    <main id="homepage">
+
+        <header>
+
+            <a href="#"><li id="home-button"><span id="red">raw</span>TenTik</li></a>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <nav class="nav-menu" id="navMenu">
+              <ul>
+                <li id="hide-home"><a href="#">Home</a></li>
+                <li id="music-hide"><a href="#music-page">Music</a></li>
+                <li id="mobile-hide"><a href="#desktop-music-page">Music</a></li>
+                <li id="video-hide"><a href="#video-page">Videos</a></li>
+                <li id="mobile-video-hide"><a href="#desktop-video-page">Videos</a></li>
+                <li><a href="#about-page">About</a></li>
+                <li><a href="#contact-page">Contact</a></li>
+              </ul>
+            </nav>
+    
+    
+        </header>
+
+        <div class="main-text">
+
+            <div class="home-container">
+
+                <div class="listen-container">
+                    <p>Listen</p>
+
+                    <div class="listen-wrapper">
+                        <a href="https://music.apple.com/us/artist/tentik/1104384672" target="_blank"><div class="listen-cards"><img src="/images/appleicon.png" alt="apple icon"></div></a>
+                        <a href="https://open.spotify.com/artist/6LK8yBkT4NeWp7mCySpGeQ" target="_blank"><div class="listen-cards"><img src="/images/spotifyicon.png" alt="spotify icon"></div></a>
+                        <a href="https://youtube.com/@tentikvevo4927" target="_blank"><div class="listen-cards"><img src="/images/youtubeicon.png" alt="youtube icon"></div></a>
+                    </div>
+
+                </div>
+            
+            
+                <div class="listen-container">
+                        <p>Follow</p>
+
+                        <div class="listen-wrapper">
+                            <a href="https://www.instagram.com/rawtentik/" target="_blank"><div class="listen-cards"><img src="/images/instagramicon.png" alt="instagram icon"></div></a>
+                            <a href="https://www.twitter.com/rawtentik/" target="_blank"><div class="listen-cards"><img src="/images/twittericon.png" alt="twitter icon"></div></a>
+                            <a href="https://www.facebook.com/tentik.rgm/" target="_blank"><div class="listen-cards"><img src="/images/facebookicon.png" alt="facebook icon"></div></a>
+                        </div>
+
+                </div>
+            </div>
+        
+            <div class="home-container">
+                <section id="randomLyricsSection">
+                    <p id="randomLyricsDisplay"></p>
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- MUSIC SECTION FOR DESKTOP -->
+
+    <section class="music-desktop">
+
+        <h2 class="section-title" id="desktop-music-page">Music</h2>
+
+        <div class="music-wrapper">
+            <a href="https://music.apple.com/us/artist/tentik/1104384672" target="_blank"><div class="music-cards">
+                <img src="/images/apple.png" alt="apple music logo">
+            </div></a>
+            <a href="https://open.spotify.com/artist/6LK8yBkT4NeWp7mCySpGeQ?si=jSBq7avOT32Wz-w4jr2VZA" target="_blank"><div class="music-cards">
+                <img src="/images/spotify.png" alt="spotify logo">
+            </div></a>
+            <a href="https://soundcloud.com/tentik_rgm" target="_blank"><div class="music-cards">
+                <img src="/images/soundcloud.png" alt="soundcloud logo">
+            </div></a>
+            <a href="https://tidal.com/browse/artist/7754818" target="_blank"><div class="music-cards">
+                <img src="/images/tidal.png" alt="tidal logo">
+            </div></a>
+            <a href="https://www.deezer.com/us/artist/10199898" target="_blank"><div class="music-cards">
+                <img src="/images/deezer.png" alt="deezer logo">
+            </div></a>
+        </div>
+
+        
+        <div class="latest-release">
+            <!-- <h3>Latest release</h3> -->
+
+            <div class="latest-wrapper">
+
+                <div class="latest-container">
+
+                    <div class="latest-cards">
+                        <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                    </div>
+                </div>
+
+                <div class="latest-container" id="new-release">
+
+                    <div class="latest-cards">
+                        <p id="new-single">New single out now!</p>
+                    </div>
+
+                    <div class="latest-cards">
+                        <p id="latest-title">TenTik - Nothing To Prove</p>
+                    </div>
+
+                    <a class="latest-cards" href="https://ffm.to/tenntp" target="_blank"><div class="latest-cards">
+                        <button class="site-buttons">Listen</button>
+                    </div></a>
+                </div>
+            </div>
+
+            <div class="albums">
+                <h3>Albums</h3>
+    
+                <div class="albums-wrapper">
+    
+                    <div class="albums-cards" onclick="showPopup('/images/ntp.jpg', 'First Aid', 'https://music.apple.com/us/album/first-aid/1462497257')">
+                        <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                        <p class="album-titles">First Aid</p>
+                        <p>2017</p>
+                    </div>
+    
+                    <div class="albums-cards" onclick="showPopup('/images/ntp.jpg', 'Hallway Echoes', 'https://music.apple.com/us/album/hallway-echoes/1656591030')">
+                        <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                        <p class="album-titles">Hallway Echoes</p>
+                        <p>2018</p>
+                    </div>
+    
+                </div>
+                
+            </div>
+
+            <div class="popup-container" id="popup-container">
+                <div class="popup" id="popup">
+                  <img src="" alt="Popup Image" id="popup-image">
+    
+                  <div class="popup-wrapper">
+                        <h3 id="popup-title">Popup Title</h3>
+                        <a href="#" class="site-buttons" id="listen-link" target="_blank">Listen</a>
+                        <button class="close-button" onclick="hidePopup()">Close</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="singles">
+                <h3>Singles & EPs</h3>
+    
+                <div class="albums-wrapper">
+    
+                    <div class="albums-cards" onclick="showPopup('/images/ntp.jpg', 'First Aid', 'https://music.apple.com/album/album1')">
+                        <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                        <p class="album-titles">First Aid</p>
+                    </div>
+    
+                    <div class="albums-cards" onclick="showPopup('/images/ntp.jpg', 'First Aid', 'https://music.apple.com/album/album1')">
+                        <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                        <p class="album-titles">Hallway Echoes</p>
+                    </div>
+    
+                    <div class="albums-cards" onclick="showPopup('/images/ntp.jpg', 'First Aid', 'https://music.apple.com/album/album1')">
+                        <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                        <p class="album-titles">First Aid</p>
+                    </div>
+    
+                    <div class="albums-cards" onclick="showPopup('/images/ntp.jpg', 'First Aid', 'https://music.apple.com/album/album1')">
+                        <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                        <p class="album-titles">Hallway Echoes</p>
+                    </div>
+    
+                    <div class="albums-cards" onclick="showPopup('/images/ntp.jpg', 'First Aid', 'https://music.apple.com/album/album1')">
+                        <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                        <p class="album-titles">First Aid</p>
+                    </div>
+    
+                    <div class="albums-cards" onclick="showPopup('/images/ntp.jpg', 'First Aid', 'https://music.apple.com/album/album1')">
+                        <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                        <p class="album-titles">Hallway Echoes</p>
+                    </div>
+    
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+    <!-- MUSIC SECTION FOR MOBILE-->
+
+    <section class="music">
+
+
+        <div class="latest-release">
+            <!-- <h3>Latest release</h3> -->
+
+            <div class="latest-wrapper">
+
+                <div class="latest-cards">
+                    <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                </div>
+
+                <div class="latest-cards">
+                    <p id="latest-title">TenTik - Nothing To Prove</p>
+                </div>
+
+                <div class="latest-cards">
+                    <p id="new-single">New single out now!</p>
+                </div>
+
+                <a class="latest-cards" href="https://ffm.to/tenntp" target="_blank"><div class="latest-cards">
+                    <button class="site-buttons">Listen</button>
+                </div></a>
+            </div>
+
+        </div>
+
+        <h2 class="section-title" id="music-page">Music</h2>
+
+        <div class="music-wrapper">
+            <a href="https://music.apple.com/us/artist/tentik/1104384672" target="_blank"><div class="music-cards">
+                <img src="/images/apple.png" alt="apple music logo">
+            </div></a>
+            <a href="https://open.spotify.com/artist/6LK8yBkT4NeWp7mCySpGeQ?si=jSBq7avOT32Wz-w4jr2VZA" target="_blank"><div class="music-cards">
+                <img src="/images/spotify.png" alt="spotify logo">
+            </div></a>
+            <a href="https://soundcloud.com/tentik_rgm" target="_blank"><div class="music-cards">
+                <img src="/images/soundcloud.png" alt="soundcloud logo">
+            </div></a>
+            <a href="https://tidal.com/browse/artist/7754818" target="_blank"><div class="music-cards">
+                <img src="/images/tidal.png" alt="tidal logo">
+            </div></a>
+            <a href="https://www.deezer.com/us/artist/10199898" target="_blank"><div class="music-cards">
+                <img src="/images/deezer.png" alt="deezer logo">
+            </div></a>
+        </div>
+
+
+        <div class="albums">
+            <h3>Albums</h3>
+
+            <div class="albums-wrapper">
+
+                <div class="albums-cards" onclick="showPopup('/images/ntp.jpg', 'First Aid', 'https://music.apple.com/us/album/first-aid/1462497257')">
+                    <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                    <p class="album-titles">First Aid</p>
+                    <p>2017</p>
+                </div>
+
+                <div class="albums-cards" onclick="showPopup('/images/ntp.jpg', 'Hallway Echoes', 'https://music.apple.com/us/album/hallway-echoes/1656591030')">
+                    <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                    <p class="album-titles">Hallway Echoes</p>
+                    <p>2018</p>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="popup-container" id="popup-container">
+            <div class="popup" id="popup">
+              <img src="" alt="Popup Image" id="popup-image">
+
+              <div class="popup-wrapper">
+                    <h3 id="popup-title">Popup Title</h3>
+                    <a href="#" class="site-buttons" id="listen-link" target="_blank">Listen</a>
+                    <button class="close-button" onclick="hidePopup()">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="singles">
+            <h3>Singles & EPs</h3>
+
+            <div class="albums-wrapper">
+
+                <div class="albums-cards" onclick="showPopup('/images/ntp.jpg', 'First Aid', 'https://music.apple.com/album/album1')">
+                    <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                    <p class="album-titles">First Aid</p>
+                </div>
+
+                <div class="albums-cards" onclick="showPopup('/images/ntp.jpg', 'First Aid', 'https://music.apple.com/album/album1')">
+                    <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                    <p class="album-titles">Hallway Echoes</p>
+                </div>
+
+                <div class="albums-cards" onclick="showPopup('/images/ntp.jpg', 'First Aid', 'https://music.apple.com/album/album1')">
+                    <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                    <p class="album-titles">First Aid</p>
+                </div>
+
+                <div class="albums-cards" onclick="showPopup('/images/ntp.jpg', 'First Aid', 'https://music.apple.com/album/album1')">
+                    <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                    <p class="album-titles">Hallway Echoes</p>
+                </div>
+
+                <div class="albums-cards" onclick="showPopup('/images/ntp.jpg', 'First Aid', 'https://music.apple.com/album/album1')">
+                    <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                    <p class="album-titles">First Aid</p>
+                </div>
+
+                <div class="albums-cards" onclick="showPopup('/images/ntp.jpg', 'First Aid', 'https://music.apple.com/album/album1')">
+                    <img src="/images/ntp.jpg" alt="nothing to prove single artwork">
+                    <p class="album-titles">Hallway Echoes</p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- VIDEO SECTION FOR DESKTOP -->
+
+    <section class="videos" id="desktop-video-page">
+        <h2 class="section-title">Videos</h2>
+
+        <div class="youtube-frame">
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/jJvBr_71ScA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <h4>More videos</h4>
+
+        <ul class="more">
+            <a href="https://youtube.com/@tentikvevo4927" target="_blank"><li>
+                <img src="/images/youtube.svg" alt="youtube logo">
+            </li></a>
+        </ul>
+
+    </section>
+
+    <!-- VIDEOS SECTION FOR MOBILE -->
+
+
+    <section class="videos" id="video-page">
+        <h2 class="section-title">Videos</h2>
+
+        <div class="youtube-frame">
+            <iframe id="latest-video" src="https://www.youtube.com/embed/jJvBr_71ScA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <h4>More videos</h4>
+
+        <ul class="more">
+            <a href="https://youtube.com/@tentikvevo4927" target="_blank"><li>
+                <img src="/images/youtube.svg" alt="youtube logo">
+            </li></a>
+        </ul>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+
+    <section class="about" id="about-page">
+        <h2 class="section-title">About</h2>
+
+        <div class="about-wrapper">
+            <p class="about-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit dolore tempora facere est nostrum harum ipsam id. Cumque explicabo, sequi reiciendis beatae ratione rem quasi ducimus dolorum quas nobis quia ut fugiat labore error accusantium dolorem nostrum recusandae necessitatibus porro?</p>
+            <p class="about-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum in quae accusantium? In sequi, qui reiciendis animi adipisci aspernatur? Quam?</p>
+            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio neque itaque reiciendis sunt, alias natus omnis officia fugiat tempore nulla obcaecati sapiente? Reiciendis et a eos, earum alias error eligendi sint corrupti atque maxime aliquid itaque delectus ab eaque vel. Maxime soluta sapiente obcaecati quos!</p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+
+
+    <section class="contact" id="contact-page">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-wrapper">
+            <a href="https://www.instagram.com/rawtentik/" target="_blank"><div class="contact-cards">
+                <img src="/images/instagram.svg" alt="instagram logo">
+            </div></a>
+
+            <a href="https://www.twitter.com/rawtentik/" target="_blank"><div class="contact-cards">
+                <img src="/images/twitter.png" alt="twitter logo">
+            </div></a>
+
+            <a href="https://www.facebook.com/tentik.rgm/" target="_blank"><div class="contact-cards">
+                <img src="/images/facebook.png" alt="facebook logo">
+            </div></a>
+            
+            <div class="contact-cards small-icons">
+                <a href="mailto:booktentik@gmail.com"><img src="/images/mail.png" alt="mail icon"></a>
+                <p>booktentik@gmail.com</p>
+            </div>
+            <div class="contact-cards small-icons" id="telephone">
+                <a href="tel:+2342387890"><img src="/images/telephone.png" alt="telephone icon"></a>
+                <p>0123456789</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- BACK TO TOP BUTTON -->
+
+    <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+
+    <!-- FOOTER -->
+
+    <footer id="footer">
+        <li>Copyright &copy 2023 TenTik RGM</li>
+    </footer>
+
+</body>
+</html>
