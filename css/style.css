@@ -443,7 +443,7 @@ body{
         justify-content: center;
         align-items: center;
         padding: 2rem;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.479);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.63);
     }
 
     .contact-wrapper{
@@ -489,7 +489,14 @@ body{
     }
 
  
-
+    footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        height: 100px;
+        align-items: center;
+        color: #00000075;
+    }
 
 
 
@@ -914,6 +921,10 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    #hide-footer{
+        display: none;
     }
 
 
