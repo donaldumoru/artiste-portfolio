@@ -942,14 +942,15 @@ body{
         bottom: 20px;
         right: 20px;
         border: none;
-        /* padding: 10px 20px; */
+        background-color: #fffff9;
+        padding: 10px 20px;
         font-size: 16px;
         cursor: pointer;
         display: none; 
     }
 
     .back-to-top img{
-        width: 20px;
+        width: 30px;
     }
       
     .back-to-top:hover {
