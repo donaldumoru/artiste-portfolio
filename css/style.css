@@ -455,14 +455,14 @@ body{
         justify-content: center;
         align-items: center;
         background: #fffff9cc;
-        padding: 10rem;
+        padding: 8rem 2rem 8rem 2rem;
         width: 50%;
     }
     }
-
+/* 
     .about-text{
         margin-bottom: 1rem;
-    }
+    } */
 
     /**** CONTACT SECTION ****/
 
