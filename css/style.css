@@ -430,7 +430,7 @@ body{
         background-image: url(../images/about1.jpg);
         background-size: cover;
         height: 120vh;
-        justify-content: normal;
+        justify-content: center;
         align-items: center;
     }
 
