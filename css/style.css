@@ -1003,6 +1003,7 @@ body{
     .construction-wrapper h1{
         font-family: var(--headings);
         letter-spacing: 5px;
+        font-size: 2.5rem;
     }
 
     #ready{
@@ -1011,7 +1012,7 @@ body{
     }
 
     .loading-bar {
-        width: 35%;
+        width: 50%;
         height: 20px;
         border: 2px solid #fffff9;
         overflow: hidden;
