@@ -1028,7 +1028,7 @@ body{
 
     .loading{
         display: flex;
-        width: 35%;
+        width: 50%;
         justify-content: space-between;
         letter-spacing: normal;
     }
