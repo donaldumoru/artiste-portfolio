@@ -76,14 +76,6 @@ body{
     }
 
     .main-text{
-        /* position: absolute;
-        display: flex;
-        flex-direction: column;
-        gap: 2.5rem;
-        margin-left: 2%;
-        margin-top: 10%;
-        font-family: var(--titles); */
-
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -145,7 +137,7 @@ body{
 
 
 
-       /***MUSIC SECTION ***/
+    /***MUSIC SECTION ***/
 
     #latest-title{
         font-family: var(--headings);
@@ -459,12 +451,6 @@ body{
         width: 50%;
     }
     }
-/* 
-    .about-text{
-        margin-bottom: 1rem;
-    } */
-
-    /**** CONTACT SECTION ****/
 
     .contact{
         display: flex;
@@ -493,7 +479,6 @@ body{
     }
 
     .contact-cards img:hover{
-        /* filter: brightness(70%); */
         opacity: 0.7;
     }
     
@@ -553,6 +538,55 @@ body{
     .back-to-top img{
         width: 25px;
     }
+
+
+    /* .construction-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(rgba(161, 161, 161, 0.8), rgba(0, 0, 0, 0.8)), url(../images/homepage.jpg);
+        background-size: cover;
+        height: 100vh;
+        text-align: center;
+        font-size: 2rem;
+        gap: 30px;
+        letter-spacing: 15px;
+        color: #fffff9;
+    }
+    
+    .construction-wrapper h1{
+        font-family: var(--headings);
+    }
+    
+    #ready{
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+    
+    .loading{
+        display: flex;
+        width: 35%;
+        justify-content: space-between;
+        letter-spacing: normal;
+    }
+    
+    
+    .loading-bar {
+        width: 35%;
+        height: 30px;
+        border: 2px solid #fffff9;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+      
+    .progress {
+        width: 70%;
+        height: 100%;
+        background-color: #A52A2A;
+    } */
+
 
 
 
@@ -952,6 +986,54 @@ body{
         margin-top: 1.8rem
     }
 
+    .construction-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(rgba(161, 161, 161, 0.8), rgba(0, 0, 0, 0.8)), url(../images/homepage.jpg);
+        background-size: cover;
+        height: 100vh;
+        text-align: center;
+        font-size: 2rem;
+        gap: 30px;
+        letter-spacing: 15px;
+        color: #fffff9;
+        width: fit-content;
+    }
+    
+    .construction-wrapper h1{
+        font-family: var(--headings);
+    }
+    
+    #ready{
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+    
+    .loading{
+        display: flex;
+        width: 35%;
+        justify-content: space-between;
+        letter-spacing: normal;
+    }
+    
+    
+    .loading-bar {
+        width: 35%;
+        height: 30px;
+        border: 2px solid #fffff9;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+      
+    .progress {
+        width: 70%;
+        height: 100%;
+        background-color: #A52A2A;
+    }
+
 
 
     /*** BACK TO TOP BUTTON ***/
@@ -989,14 +1071,8 @@ body{
     }
 
 
-
-
-
-
-
-
-
 }
+
 
 /**** FONTS ****/
 
