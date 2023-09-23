@@ -51,7 +51,7 @@ window.addEventListener("click", function (event) {
 });
 
 
-// Define an array of random lyrics
+// Array of random lyrics
 const lyricsArray = [
     "\"Knew from the jump I was nice, \nI never needed the hype\" \n- THE COUP",
 
