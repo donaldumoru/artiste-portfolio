@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Get the music section element
     const musicSection = document.getElementById('music-page');
 
-    // Get the footer element
+    // Get the footer element (Replace 'footer' with your footer element ID or class)
     const footer = document.getElementById('footer');
 
     // Get the Back to Top button element
@@ -51,7 +51,7 @@ window.addEventListener("click", function (event) {
 });
 
 
-// Array of random lyrics
+// Define an array of random lyrics
 const lyricsArray = [
     "\"Knew from the jump I was nice, \nI never needed the hype\" \n- THE COUP",
 
