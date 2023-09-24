@@ -9,11 +9,6 @@
     text-decoration: none;
     list-style: none;
     font-family: var(--titles);
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 body{
@@ -66,6 +61,74 @@ body{
     #red{
         font-family: var(--headings);
         color: #B90909;
+    }
+
+
+    #privacy-header{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-transform: uppercase;
+    }
+
+    .page-header h1{
+        color: #B90909;
+        font-family: var(--headings);
+        letter-spacing: 5px;
+        font-size: 2.5rem;
+    }
+
+    .policy-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    #website{
+        color: #B90909;
+    }
+
+
+    .privacy-content{
+        color: rgba(0, 0, 0, 0.596);
+        font-size: 18px;
+        line-height: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #fffff9cc;
+        padding: 2rem 2rem 2rem 2rem;
+        width: 50%;
+    }
+
+    .bold-text{
+        font-weight: bold;
+    }
+
+
+    .icons-wrapper{
+        display: flex;
+        gap: 30px;
+    }
+
+    .icons-wrapper img{
+        width: 15px;
+    }
+
+    .icons-wrapper a{
+        color: black;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .icons-wrapper a:hover{
+        color: #B90909;
+    }
+
+    .icons-container{
+        display: flex;
+        gap: 30px;
     }
 
     #homepage{
@@ -302,6 +365,10 @@ body{
         color: rgba(0, 0, 0, 0.479);
     }
 
+    .year{
+        color: black;
+    }
+
 
 
     /* POPUP CONTAINER */
@@ -432,7 +499,6 @@ body{
         justify-content: center;
         align-items: center;
         padding: 2rem;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.63);
     }
 
     .about-wrapper{
@@ -458,7 +524,6 @@ body{
         justify-content: center;
         align-items: center;
         padding: 2rem;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.63);
         gap: 70px;
     }
 
@@ -494,6 +559,9 @@ body{
         display: flex;
         flex-direction: row;
         gap: 100px;
+        text-align: center;
+        align-items: flex-end;
+
     }
 
     .small-icons img{
@@ -511,14 +579,28 @@ body{
     }
 
  
+    #footer-mobile{
+        display: none;
+    }
+
     footer{
         text-transform: uppercase;
         display: flex;
+        gap: 50px;
         padding: 15px;
         height: 100px;
         justify-content: center;
         align-items: end;
         color: #00000075;
+    }
+
+    footer a{
+        color: #000000ab;
+        transition: all 0.3s ease-in-out;
+    }
+
+    footer a:hover{
+        color: #000000d5;
     }
 
 
@@ -665,6 +747,76 @@ body{
     font-family: var(--headings);
     letter-spacing: 2px;
     }
+
+
+    #privacy-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #privacy-header li{
+        font-size: 1.5rem;
+    }
+
+    .page-header h1{
+        color: #B90909;
+        font-family: var(--headings);
+        letter-spacing: 5px;
+        font-size: 1.5rem;
+    }
+
+    .policy-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3.5rem;
+    }
+
+    #website{
+        color: #B90909;
+    }
+
+
+    .privacy-content{
+        color: rgba(0, 0, 0, 0.596);
+        font-size: 14px;
+        line-height: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #fffff9cc;
+        padding: 2rem 2rem 2rem 2rem;
+    }
+
+    .bold-text{
+        font-weight: bold;
+    }
+
+
+    .icons-wrapper{
+        display: none;
+    }
+
+    .icons-wrapper img{
+        width: 15px;
+    }
+
+    .icons-wrapper a{
+        color: black;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .icons-wrapper a:hover{
+        color: #B90909;
+    }
+
+    .icons-container{
+        display: flex;
+        gap: 30px;
+    }
     
     .main {
     padding: 20px;
@@ -783,6 +935,7 @@ body{
         flex-wrap: wrap;
         gap: 8%;
         justify-content: flex-start;
+        flex-direction: row;
     }
 
     .albums-cards img{
@@ -943,11 +1096,9 @@ body{
         justify-content: center;
         align-items: center;
         padding: 2rem;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.479);
     }
 
     .contact-wrapper{
-        margin-top: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -971,6 +1122,9 @@ body{
         display: flex;
         flex-direction: column;
         gap: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .small-icons img{
@@ -1009,6 +1163,7 @@ body{
     #ready{
         text-transform: uppercase;
         font-size: 15px;
+        letter-spacing: normal;
     }
 
     .loading-bar {
@@ -1028,9 +1183,10 @@ body{
 
     .loading{
         display: flex;
-        width: 50%;
+        width: 35%;
         justify-content: space-between;
         letter-spacing: normal;
+        font-size: 15px;
     }
     
 
@@ -1058,17 +1214,37 @@ body{
 
     /*** FOOTER ***/
 
-    footer{
-        text-transform: uppercase;
-        height: 4rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
-    #hide-footer{
+    #footer{
         display: none;
     }
+
+
+    #footer-mobile{
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        font-size: 8px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        color: #00000075;
+        font-size: .7rem;
+    }
+
+    .footer-wrapper{
+        display: flex;
+        gap: 20px;
+
+    }
+
+    footer a{
+        color: #000000ab;
+        transition: all 0.3s ease-in-out;
+    }
+
+
 
 
 }
