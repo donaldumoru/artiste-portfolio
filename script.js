@@ -120,6 +120,8 @@ const lyricsArray = [
     "\"They tripping cos I stay dripping. \nEverything fly, even the rap na pidgin\" \n- SUMMER VIBE",
 
     "\"I just wanna live my life happy, make enjoyment show for my autopsy\" \n- SUMMER VIBE",
+
+    "\"We're straight outta Waff \nWe no dey carry last out here\" \n-  NA WE DEY HERE SO"
 ];
 
 // Function to get a random lyric from the array
